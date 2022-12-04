@@ -8,6 +8,9 @@ const { response } = require("express");
 app.use(bodyParser.json());
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname + "/public")));
+app.use(express.urlencoded({
+  extended:false
+}))
 // app.use(express.static("public"));
 
 app.get("/", async (req, res) => {
