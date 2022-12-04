@@ -1,21 +1,20 @@
 {
   "development": {
     "username": "postgres",
-    "password": "Chikku@0804",
-    "database": "database_development",
+    "password": "anjali",
+    "database": "postgres",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgresql"
   },
   "test": {
     "username": "postgres",
-    "password": "Chikku@0804",
-    "database": "database_test ",
+    "password": "anjali",
+    "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgresql"
   },
   "production": {
-   
-    "dialect": "postgres",
-    "use_env_variable":"DATABASE_URL"
+    "use_env_variable":"DATABASE_URL",
+    "dialect": "postgresql"
   }
 }
